@@ -30,8 +30,8 @@ function operate(x, operator, y) {
         num = divide(x,y);
     }
     else if (operator == '*') {
-        document.getElementById('display').value = multiple(x,y);
-        num = multiple(x,y);
+        document.getElementById('display').value = multiply(x,y);
+        num = multiply(x,y);
     }
     else {
         return "I'm too gay to do math that advanced.";
