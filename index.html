@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <div class="calc">
+        <input type="text" id="display"></input>
+        <div class="1st row">
+            <button class="btn" value="9" onclick="disp('9'), displayString('9')">9</button>
+            <button class="btn" id="8" onclick="disp('8'), displayString('8')">8</button>
+            <button class="btn" id="7" onclick="disp('7'), displayString('7')">7</button>
+            <button class="btn" id="divide" onclick="divideSign(), displayString(', /, ')">/</button>
+        </div>
+        <div class="2nd row">
+            <button class="btn" id="6" onclick="disp('6'), displayString('6')">6</button>
+            <button class="btn" id="5" onclick="disp('5'), displayString('5')">5</button>
+            <button class="btn" id="4" onclick="disp('4'), displayString('4')">4</button>
+            <button class="btn" id=times" onclick="timesSign(), displayString(', *, ')">*</button>
+        </div>
+        <div class="3rd row">
+            <button class="btn" id="3" onclick="disp('3'), displayString('3')">3</button>
+            <button class="btn" id="2" onclick="disp('2'), displayString('2')">2</button>
+            <button class="btn" id="1" onclick="disp('1'), displayString('1')">1</button>
+            <button class="btn" id="minus" onclick="minusSign(), displayString(', -, ')">-</button>
+        </div>
+        <div class="4th row">
+            <button class="btn" id="decimal" onclick="disp('.'), displayString('.')">.</button>
+            <button class="btn" id="0" onclick="disp('0'), displayString('0')">0</button>
+            <button class="btn" id="clear" onclick="document.getElementById('display').value = '', num = 0">clear</button>
+            <button class="btn" id="plus" onclick="plusSign(), displayString(', +, ')">+</button>
+        </div>
+        <div class="5th row">
+            <button class="btn" id="equals" onclick="equals(num)">=</button>
+        </div>
+    </div>
+</body>
+</html>
